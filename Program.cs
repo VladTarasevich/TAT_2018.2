@@ -53,7 +53,7 @@ namespace ConsoleApp1
         public static int GetBase()
         {
             int input;
-            Console.WriteLine("Input basis");
+            Console.WriteLine("Input base");
             String inputString = Console.ReadLine();
             while (!Int32.TryParse(inputString, out input) || input < 2 || input > 20)
             {
