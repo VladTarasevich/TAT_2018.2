@@ -17,7 +17,7 @@ namespace ConsoleApp1
             int baseOutput = GetBase();
             if (input == 0)
             {
-                Console.WriteLine("Ответ");
+                Console.WriteLine("Answer");
                 Console.WriteLine(0);
                 Console.ReadKey();
             }
