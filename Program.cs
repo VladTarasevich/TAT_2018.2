@@ -31,7 +31,7 @@ namespace ConsoleApp1
                 }
                 Char[] outputArray = output.ToString().ToCharArray();
                 Array.Reverse(outputArray);
-                Console.WriteLine("Ответ");
+                Console.WriteLine("Answer");
                 Console.WriteLine(outputArray);
                 Console.ReadKey();
             }
@@ -40,11 +40,11 @@ namespace ConsoleApp1
         public static int GetInput()
         {
             int input;
-            Console.WriteLine("Введите число");
+            Console.WriteLine("Input number");
             String inputString = Console.ReadLine();
             while (!Int32.TryParse(inputString, out input))
             {
-                Console.WriteLine("Некорректный ввод");
+                Console.WriteLine("Incorrect input");
                 inputString = Console.ReadLine();
             }
             return input;
@@ -53,11 +53,11 @@ namespace ConsoleApp1
         public static int GetBase()
         {
             int input;
-            Console.WriteLine("Введите основание");
+            Console.WriteLine("Input basis");
             String inputString = Console.ReadLine();
             while (!Int32.TryParse(inputString, out input) || input < 2 || input > 20)
             {
-                Console.WriteLine("Некорректный ввод");
+                Console.WriteLine("Incorrect input");
                 inputString = Console.ReadLine();
             }
             return input;
